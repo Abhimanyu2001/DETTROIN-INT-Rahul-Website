@@ -209,9 +209,7 @@ function Footer() {
           © 2026 Excellence International School. All Rights Reserved.
         </p>
 
-        <p>
-          Designed by <span>Your Name</span>
-        </p>
+        
 
       </div>
 
