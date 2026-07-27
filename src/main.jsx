@@ -14,6 +14,7 @@ import Home from "./components/Home";
 import EnquiryPage from "./components/EnquiryPage";
 import Aboutus from "./components/Aboutus";
 import Gallery from "./components/Gallery";
+import ContactUs from "./components/ContactUs";
 
 
 const router = createBrowserRouter(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/enquiry" element={<EnquiryPage />} />
       <Route path="/aboutus" element={<Aboutus/>} />
       <Route path="/gallery" element={<Gallery/>} />
+      <Route path="/contactus" element={<ContactUs/>} />
 
     </Route>
   )
