@@ -1,0 +1,501 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f7f9fc;
+}
+
+/* ===========================
+        HERO SECTION
+=========================== */
+
+.admissionHero{
+    width:100%;
+    height:380px;
+    background:
+    linear-gradient(rgba(7,32,71,.75),rgba(7,32,71,.75)),
+    url("../assets/admission-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.heroOverlay{
+    text-align:center;
+    color:#fff;
+}
+
+.heroOverlay h1{
+    font-size:58px;
+    font-weight:700;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.breadcrumb{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-size:17px;
+}
+
+.breadcrumb span{
+    color:#f4b400;
+}
+
+.breadcrumb strong{
+    color:#f4b400;
+}
+
+
+/* ===========================
+        MAIN SECTION
+=========================== */
+
+.admissionSection{
+    width:100%;
+    padding:80px 8%;
+    background:#f5f7fb;
+}
+
+.admissionContainer{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:45px;
+    align-items:flex-start;
+}
+
+
+/* ===========================
+     LEFT SECTION
+=========================== */
+
+.sectionHeading{
+    margin-bottom:40px;
+}
+
+.sectionHeading h2{
+    font-size:38px;
+    color:#072047;
+    margin-bottom:12px;
+}
+
+.headingLine{
+    width:90px;
+    height:4px;
+    border-radius:30px;
+    background:#f4b400;
+}
+
+
+/* ===========================
+     OVERVIEW CARD
+=========================== */
+
+.overviewCard,
+.infoCard,
+.emailCard{
+
+    display:flex;
+    gap:25px;
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    margin-bottom:22px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.overviewCard:hover,
+.infoCard:hover,
+.emailCard:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 22px 45px rgba(0,0,0,.13);
+
+}
+
+
+/* ===========================
+      ICON
+=========================== */
+
+.overviewIcon{
+
+    min-width:65px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#072047;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:25px;
+
+    transition:.4s;
+
+}
+
+.overviewCard:hover .overviewIcon,
+.infoCard:hover .overviewIcon,
+.emailCard:hover .overviewIcon{
+
+    background:#f4b400;
+
+    color:#072047;
+
+}
+
+
+/* ===========================
+      CARD TEXT
+=========================== */
+
+.overviewCard h3,
+.infoCard h3{
+
+    color:#072047;
+
+    font-size:23px;
+
+    margin-bottom:10px;
+
+}
+
+.overviewCard p,
+.infoCard p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.emailCard p{
+
+    color:#666;
+
+    margin-bottom:10px;
+
+    line-height:1.7;
+
+}
+
+.emailCard h4{
+
+    color:#072047;
+
+    font-size:19px;
+
+    word-break:break-word;
+
+}
+
+/*=========================================
+        RIGHT FORM SECTION
+=========================================*/
+
+.formSection{
+    position: sticky;
+    top:120px;
+}
+
+.formCard{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    transition:.35s;
+
+}
+
+.formCard:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+            FORM HEADER
+=========================================*/
+
+.formHeader{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+    color:#072047;
+
+}
+
+.formHeader svg{
+
+    width:55px;
+
+    height:55px;
+
+    background:#f4b400;
+
+    color:#072047;
+
+    padding:15px;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+}
+
+.formHeader h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+/*=========================================
+              FORM
+=========================================*/
+
+.admissionForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/*=========================================
+           FORM GROUP
+=========================================*/
+
+.formGroup{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.formGroup label{
+
+    margin-bottom:8px;
+
+    color:#072047;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+          INPUTS
+=========================================*/
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid #d6dce8;
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:#fff;
+
+    font-size:15px;
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder{
+
+    color:#999;
+
+}
+
+/*=========================================
+        FOCUS EFFECT
+=========================================*/
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus{
+
+    border-color:#f4b400;
+
+    box-shadow:0 0 0 4px rgba(244,180,0,.18);
+
+}
+
+/*=========================================
+           SELECT
+=========================================*/
+
+.formGroup select{
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+          TEXTAREA
+=========================================*/
+
+.formGroup textarea{
+
+    resize:none;
+
+    min-height:130px;
+
+}
+
+/*=========================================
+        SUBMIT BUTTON
+=========================================*/
+
+.submitBtn{
+
+    margin-top:15px;
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    background:#072047;
+
+    color:#fff;
+
+    transition:.35s;
+
+    letter-spacing:.5px;
+
+}
+
+.submitBtn:hover{
+
+    background:#f4b400;
+
+    color:#072047;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(244,180,0,.35);
+
+}
+
+.submitBtn:active{
+
+    transform:scale(.98);
+
+}
+
+/*=========================================
+      INPUT HOVER
+=========================================*/
+
+.formGroup input:hover,
+.formGroup select:hover,
+.formGroup textarea:hover{
+
+    border-color:#072047;
+
+}
+
+/*=========================================
+      SCROLLBAR
+=========================================*/
+
+.formCard::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.formCard::-webkit-scrollbar-thumb{
+
+    background:#f4b400;
+
+    border-radius:20px;
+
+}
+
+.formCard::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}

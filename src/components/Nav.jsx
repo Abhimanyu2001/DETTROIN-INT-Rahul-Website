@@ -40,9 +40,8 @@ function Nav() {
             </li>
 
             <li>
-              <NavLink to="/admissions">
+              <NavLink to="/admission">
                 Admissions
-                <FaChevronDown className="down-icon" />
               </NavLink>
             </li>
 
@@ -53,9 +52,6 @@ function Nav() {
               </NavLink>
             </li>
 
-            <li>
-              <NavLink to="/facilities">Facilities</NavLink>
-            </li>
 
             <li>
               <NavLink to="/gallery">Gallery</NavLink>
