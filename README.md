@@ -22,7 +22,9 @@ Excellence International School Website
 
 ## Live Demo Link
 
-(Add your Vercel URL here after deployment)
+## Live Demo Link
+
+https://dettroin-int-rahul-website-8mb7.vercel.app
 
 ## Technologies Used
 
