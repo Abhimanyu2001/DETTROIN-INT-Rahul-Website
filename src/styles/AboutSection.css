@@ -1,0 +1,283 @@
+
+
+.about{
+    max-width:1300px;
+    margin:120px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 18px;
+    background:#E8EEFF;
+    color:#163D8F;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.5px;
+    margin-bottom:20px;
+}
+
+.about-left h2{
+    font-size:46px;
+    font-weight:800;
+    color:#102A43;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.about-left>p{
+    color:#64748B;
+    line-height:1.9;
+    font-size:17px;
+    margin-bottom:40px;
+}
+
+.about-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.about-item{
+    display:flex;
+    gap:18px;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.about-item:hover{
+    transform:translateY(-8px);
+}
+
+.about-item svg{
+    width:55px;
+    height:55px;
+    background:#163D8F;
+    color:#fff;
+    padding:15px;
+    border-radius:15px;
+    flex-shrink:0;
+}
+
+.about-item h4{
+    font-size:19px;
+    margin-bottom:8px;
+    color:#102A43;
+}
+
+.about-item p{
+    color:#64748B;
+    line-height:1.7;
+    font-size:15px;
+}
+
+
+.about-right{
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.about-right img{
+    width:100%;
+    max-width:540px;
+    border-radius:28px;
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+}
+
+.experience-card{
+    position:absolute;
+    bottom:-30px;
+    right:-20px;
+    width:180px;
+    background:#163D8F;
+    color:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(22,61,143,.35);
+}
+
+.experience-card h3{
+    font-size:42px;
+    color:#FFD54A;
+    margin-bottom:10px;
+}
+
+.experience-card p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+
+
+.vision-section{
+    max-width:1300px;
+    margin:130px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.vision-card{
+    background:#fff;
+    border-radius:25px;
+    padding:50px 40px;
+    text-align:center;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.vision-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:#163D8F;
+}
+
+.vision-card:hover{
+    transform:translateY(-10px);
+}
+
+.vision-icon{
+    width:90px;
+    height:90px;
+    background:#163D8F;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    border-radius:50%;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+.vision-card h3{
+    font-size:30px;
+    color:#102A43;
+    margin-bottom:18px;
+}
+
+.vision-card p{
+    color:#64748B;
+    line-height:1.9;
+    font-size:17px;
+}
+
+
+
+.about-item:hover svg{
+    background:#FFD54A;
+    color:#163D8F;
+}
+
+.vision-card:hover .vision-icon{
+    background:#FFD54A;
+    color:#163D8F;
+}
+
+
+
+@media(max-width:1100px){
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.about-right{
+    order:-1;
+}
+
+.about-features{
+    grid-template-columns:1fr 1fr;
+}
+
+.vision-section{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+    margin:80px auto;
+}
+
+.about-left h2{
+    font-size:34px;
+}
+
+.about-features{
+    grid-template-columns:1fr;
+}
+
+.about-item{
+    padding:22px;
+}
+
+.about-right img{
+    max-width:100%;
+}
+
+.experience-card{
+    width:150px;
+    right:10px;
+    bottom:-20px;
+    padding:20px;
+}
+
+.experience-card h3{
+    font-size:34px;
+}
+
+.vision-card{
+    padding:35px 25px;
+}
+
+.vision-card h3{
+    font-size:24px;
+}
+
+.vision-card p{
+    font-size:15px;
+}
+
+}
+
+@media(max-width:480px){
+
+.about-left h2{
+    font-size:30px;
+}
+
+.about-left>p{
+    font-size:15px;
+}
+
+.section-tag{
+    font-size:12px;
+}
+
+.vision-icon{
+    width:70px;
+    height:70px;
+    font-size:28px;
+}
+
+}

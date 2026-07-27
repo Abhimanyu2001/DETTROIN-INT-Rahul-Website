@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../styles/Footer.css";
 import logo from "../assets/school.png";
 
 import {
@@ -109,7 +109,7 @@ function Footer() {
             <FaPhoneAlt />
             <div>
               <h4>Phone</h4>
-              <p>+91 7055582117</p>
+              <p>+91 5687956820</p>
             </div>
           </div>
 
@@ -208,9 +208,6 @@ function Footer() {
         <p>
           © 2026 Excellence International School. All Rights Reserved.
         </p>
-
-        
-
       </div>
 
     </footer>

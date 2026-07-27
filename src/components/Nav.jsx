@@ -1,5 +1,5 @@
 import React from "react";
-import "./Nav.css";
+import "../styles/Nav.css";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
 import logo from "../assets/school.png";
 
