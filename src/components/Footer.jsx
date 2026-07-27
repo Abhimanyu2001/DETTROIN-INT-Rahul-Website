@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import logo from "../assets/school.png";
+import { useNavigate } from "react-router-dom";
 
 import {
   FaFacebookF,
@@ -20,6 +21,8 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+
+  const navigate = useNavigate();
   return (
     <footer className="footer">
 
@@ -62,14 +65,36 @@ function Footer() {
           <h3>Quick Links</h3>
 
           <ul>
-            <li><FaChevronRight /> Home</li>
-            <li><FaChevronRight /> About Us</li>
-            <li><FaChevronRight /> Admissions</li>
-            <li><FaChevronRight /> School Life</li>
-            <li><FaChevronRight /> Facilities</li>
-            <li><FaChevronRight /> Gallery</li>
-            <li><FaChevronRight /> Blog</li>
-            <li><FaChevronRight /> Contact</li>
+
+
+             <li onClick={() => navigate("/")}>
+              <FaChevronRight />
+              <span>Home</span>
+             </li>
+
+              <li onClick={() => navigate("/aboutus")}>
+             <FaChevronRight />
+            <span>About Us</span>
+             </li>
+
+            <li onClick={() => navigate("/admission")}>
+             <FaChevronRight />
+            <span>Admissions</span>
+             </li>
+
+              <li onClick={() => navigate("/gallery")}>
+               <FaChevronRight />
+             <span>Gallery</span>
+              </li>
+          <li onClick={() => navigate("/blog")}>
+    <FaChevronRight />
+    <span>Blog</span>
+  </li>
+             <li onClick={() => navigate("/contactus")}>
+    <FaChevronRight />
+    <span>Contact</span>
+  </li>
+
           </ul>
 
         </div>
