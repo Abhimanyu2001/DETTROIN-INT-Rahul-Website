@@ -14,10 +14,13 @@ import {
   FaBaby,
 } from "react-icons/fa";
 import AboutSection from "./AboutSection";
+import EnquiryForm from "./EnquiryForm";
 
 function Home() {
   return (
     <>
+
+    <EnquiryForm/>
       {/* HERO */}
 
       <section className="hero">

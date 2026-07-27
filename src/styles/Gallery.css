@@ -1,0 +1,412 @@
+/*GALLERY PAGE*/
+
+.galleryPage {
+  width: 100%;
+  background: #f8fbff;
+  overflow-x: hidden;
+}
+
+/*HERO*/
+
+.galleryHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+
+  padding: 90px 8%;
+  min-height: 85vh;
+
+  position: relative;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+}
+
+.galleryHero::before {
+  content: "";
+  position: absolute;
+  left: -200px;
+  bottom: -150px;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(255, 183, 0, 0.08);
+  border-radius: 50%;
+}
+
+/*LEFT*/
+
+.galleryTag {
+  display: inline-block;
+
+  background: #eef4ff;
+
+  color: #0b2d5d;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.galleryLeft h1 {
+  font-size: 68px;
+
+  line-height: 1.1;
+
+  color: #0b2d5d;
+
+  margin-bottom: 25px;
+}
+
+.galleryLeft h1 span {
+  color: #f6b400;
+}
+
+.galleryLeft p {
+  font-size: 20px;
+
+  color: #5f6b7a;
+
+  line-height: 1.9;
+
+  max-width: 560px;
+}
+
+/* RIGHT */
+
+.galleryRight {
+  position: relative;
+
+  height: 520px;
+}
+
+/* photos */
+
+.heroImg {
+  position: absolute;
+
+  width: 260px;
+  height: 340px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  border: 8px solid white;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, .18);
+
+  transition: .4s;
+}
+
+.heroImg:hover {
+  transform: translateY(-10px) rotate(0deg);
+}
+
+.one {
+  left: 20px;
+  top: 70px;
+
+  transform: rotate(-8deg);
+}
+
+.two {
+  left: 210px;
+  top: 20px;
+
+  z-index: 5;
+}
+
+.three {
+  right: 10px;
+  top: 60px;
+
+  transform: rotate(8deg);
+}
+
+/* yellow circle */
+
+.yellowCircle {
+
+  position: absolute;
+
+  width: 85px;
+
+  height: 85px;
+
+  border-radius: 50%;
+
+  background: #f6b400;
+
+  left: -30px;
+
+  top: 180px;
+}
+
+/* dots */
+
+.dots {
+
+  position: absolute;
+
+  width: 90px;
+
+  height: 90px;
+
+  left: 120px;
+
+  top: 0;
+
+  background-image: radial-gradient(#6a87d7 2px, transparent 2px);
+
+  background-size: 14px 14px;
+}
+
+/*FILTER*/
+
+.galleryFilter {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  padding: 25px 8% 60px;
+}
+
+.galleryFilter button {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  border: 1px solid #d7e3f8;
+
+  background: white;
+
+  color: #0b2d5d;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .35s;
+}
+
+.galleryFilter button:hover {
+
+  background: #0b2d5d;
+
+  color: white;
+}
+
+.galleryFilter .active {
+
+  background: #0b2d5d;
+
+  color: white;
+}
+
+/*GRID*/
+
+.galleryGrid {
+
+  width: 85%;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 22px;
+
+  padding-bottom: 70px;
+}
+
+.galleryCard {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.galleryCard img {
+
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+
+  transition: .45s;
+}
+
+.galleryCard:hover img {
+
+  transform: scale(1.08);
+}
+
+.overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+      transparent,
+      rgba(11,45,93,.88)
+  );
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 20px;
+
+  opacity: 0;
+
+  transition: .4s;
+}
+
+.galleryCard:hover .overlay {
+
+  opacity: 1;
+}
+
+.overlay h3 {
+
+  color: white;
+
+  font-size: 20px;
+}
+
+/*BUTTON*/
+
+.loadMore {
+
+  text-align: center;
+
+  padding-bottom: 90px;
+}
+
+.loadMore button {
+
+  padding: 18px 55px;
+
+  border: none;
+
+  border-radius: 60px;
+
+  background: #0b2d5d;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .35s;
+}
+
+.loadMore button:hover {
+
+  background: #f6b400;
+
+  color: #0b2d5d;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width:1100px){
+
+.galleryHero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+}
+
+.galleryLeft p{
+
+margin:auto;
+}
+
+.galleryRight{
+
+margin-top:60px;
+
+height:500px;
+}
+
+.galleryGrid{
+
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.galleryLeft h1{
+
+font-size:48px;
+}
+
+.galleryGrid{
+
+grid-template-columns:1fr;
+}
+
+.galleryHero{
+
+padding:70px 5%;
+}
+
+.heroImg{
+
+width:180px;
+
+height:240px;
+}
+
+.one{
+
+left:10px;
+}
+
+.two{
+
+left:120px;
+}
+
+.three{
+
+right:10px;
+}
+
+}

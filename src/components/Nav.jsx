@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Nav.css";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
 import logo from "../assets/school.png";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -23,42 +24,60 @@ function Nav() {
         <nav>
           <ul className="nav-links">
 
-            <li className="active">Home</li>
-
-            <li>About Us</li>
-
             <li>
-              Academics
-              <FaChevronDown className="down-icon" />
+              <NavLink to="/">Home</NavLink>
             </li>
 
             <li>
-              Admissions
-              <FaChevronDown className="down-icon" />
+              <NavLink to="/aboutus">About Us</NavLink>
             </li>
 
             <li>
-              School Life
-              <FaChevronDown className="down-icon" />
+              <NavLink to="/academics">
+                Academics
+                <FaChevronDown className="down-icon" />
+              </NavLink>
             </li>
 
-            <li>Facilities</li>
+            <li>
+              <NavLink to="/admissions">
+                Admissions
+                <FaChevronDown className="down-icon" />
+              </NavLink>
+            </li>
 
-            <li>Gallery</li>
+            <li>
+              <NavLink to="/school-life">
+                School Life
+                <FaChevronDown className="down-icon" />
+              </NavLink>
+            </li>
 
-            <li>Blog</li>
+            <li>
+              <NavLink to="/facilities">Facilities</NavLink>
+            </li>
 
-            <li>Contact</li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/blog">Blog</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
 
           </ul>
         </nav>
 
         {/* Button */}
 
-        <button className="enquire-btn">
+        <NavLink to="/enquiry" className="enquire-btn">
           Enquire Now
           <FaArrowRight />
-        </button>
+        </NavLink>
 
       </div>
     </header>
