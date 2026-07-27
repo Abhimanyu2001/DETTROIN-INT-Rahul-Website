@@ -17,6 +17,7 @@ import Gallery from "./components/Gallery";
 import ContactUs from "./components/ContactUs";
 import Blog from "./components/Blog";
 import Admission from "./components/Admission";
+import Academics from "./components/Academics";
 
 
 const router = createBrowserRouter(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/contactus" element={<ContactUs/>} />
       <Route path="/blog" element={<Blog/>} />
       <Route path="/admission" element={<Admission/>} />
+      <Route path="/academics" element={<Academics/>} />
     </Route>
   )
 );

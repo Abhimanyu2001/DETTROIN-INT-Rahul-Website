@@ -35,7 +35,6 @@ function Nav() {
             <li>
               <NavLink to="/academics">
                 Academics
-                <FaChevronDown className="down-icon" />
               </NavLink>
             </li>
 
@@ -44,14 +43,6 @@ function Nav() {
                 Admissions
               </NavLink>
             </li>
-
-            <li>
-              <NavLink to="/school-life">
-                School Life
-                <FaChevronDown className="down-icon" />
-              </NavLink>
-            </li>
-
 
             <li>
               <NavLink to="/gallery">Gallery</NavLink>
