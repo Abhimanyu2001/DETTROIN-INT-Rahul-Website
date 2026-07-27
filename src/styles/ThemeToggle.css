@@ -1,0 +1,151 @@
+.theme-toggle{
+
+width:46px;
+
+height:46px;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+transform:scale(1.05);
+
+}
+
+body{
+
+background:#eef2f6;
+
+transition:.35s;
+
+}
+
+/* DARK MODE */
+
+body.dark-theme{
+
+background:#121212;
+
+color:white;
+
+}
+
+/* Navbar */
+
+body.dark-theme .navbar{
+
+background:#181818 !important;
+
+border-bottom:1px solid #333;
+
+}
+
+body.dark-theme .navbar-brand{
+
+color:white !important;
+
+}
+
+body.dark-theme .nav-link{
+
+color:#ddd;
+
+}
+
+body.dark-theme .nav-link:hover{
+
+color:#4da3ff;
+
+}
+
+body.dark-theme .nav-link.active{
+
+color:#4da3ff;
+
+}
+
+body.dark-theme .btn-light{
+
+background:#222;
+
+border-color:#444;
+
+color:white;
+
+}
+
+/* Login */
+
+body.dark-theme .btn-primary{
+
+background:#2563eb;
+
+}
+
+/* Cards */
+
+body.dark-theme .car-card{
+
+background:#1c1c1c;
+
+color:white;
+
+}
+
+body.dark-theme .spec-card{
+
+background:#262626;
+
+border:1px solid #333;
+
+}
+
+body.dark-theme table td{
+
+border-color:#333;
+
+color:#ddd;
+
+}
+
+body.dark-theme h1{
+
+color:white;
+
+}
+
+body.dark-theme .price{
+
+color:#4da3ff;
+
+}
+
+body.dark-theme .dropdown-menu{
+
+background:#222;
+
+}
+
+body.dark-theme .dropdown-item{
+
+color:white;
+
+}
+
+body.dark-theme .dropdown-item:hover{
+
+background:#333;
+
+}
+
+body.dark-theme footer{
+
+background:#181818;
+
+color:#ddd;
+
+}

@@ -146,6 +146,34 @@
     color:#fff;
 }
 
+/* Right Side */
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+/* Theme Toggle */
+
+.theme-toggle{
+    width:46px;
+    height:46px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    transform:scale(1.05);
+}
+
+
 /* Responsive */
 
 @media(max-width:1200px){
@@ -161,27 +189,25 @@ gap:20px;
 @media(max-width:992px){
 
 .nav-links{
-
-display:none;
-
+    display:none;
 }
 
 .enquire-btn{
+    display:none;
+}
 
-display:none;
-
+.nav-actions{
+    display:flex;
+    align-items:center;
 }
 
 .logo-text h2{
-
-font-size:28px;
-
+    font-size:28px;
 }
 
 .logo-text span{
-
-font-size:15px;
-
+    font-size:15px;
 }
 
 }
+

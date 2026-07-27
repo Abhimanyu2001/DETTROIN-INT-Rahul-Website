@@ -3,6 +3,7 @@ import "../styles/Nav.css";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
 import logo from "../assets/school.png";
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 function Nav() {
   return (
@@ -60,11 +61,14 @@ function Nav() {
         </nav>
 
         {/* Button */}
+    <div className="nav-actions">
+      <ThemeToggle />
 
-        <NavLink to="/enquiry" className="enquire-btn">
-          Enquire Now
-          <FaArrowRight />
-        </NavLink>
+      <NavLink to="/enquiry" className="enquire-btn">
+        Enquire Now
+        <FaArrowRight />
+      </NavLink>
+    </div>
 
       </div>
     </header>
