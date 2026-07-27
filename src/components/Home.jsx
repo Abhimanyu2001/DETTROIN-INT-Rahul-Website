@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 
 import hero from "../assets/baby.png";
+import { useNavigate } from "react-router-dom";
 
 import {
   FaBookOpen,
@@ -17,6 +18,8 @@ import AboutSection from "./AboutSection";
 import EnquiryForm from "./EnquiryForm";
 
 function Home() {
+
+  const navigate = useNavigate();
   return (
     <>
 
@@ -50,9 +53,12 @@ function Home() {
               <FaArrowRight />
             </button>
 
-            <button className="secondary-btn">
-              Admissions Open
-            </button>
+           <button
+          className="secondary-btn"
+           onClick={() => navigate("/admission")}
+           >
+                Admissions Open
+             </button>
 
           </div>
 
